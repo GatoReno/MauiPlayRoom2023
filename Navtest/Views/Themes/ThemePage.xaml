@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navtest.Views.Themes.ThemePage"
+             Title="ThemePage">
+    <StackLayout
+        HorizontalOptions="EndAndExpand"
+        >
+        <Label
+            TextColor="Purple"
+            Text="Activar Dark theme"
+            FontSize="Micro"
+            />
+        <Switch
+            Margin="0,0,10,0"
+             HorizontalOptions="EndAndExpand"
+            IsToggled="False"
+             Toggled="Switch_Toggled"
+            />
+
+    </StackLayout>
+</ContentPage>

@@ -2,16 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Navtest.Views.AuthPage"
+             NavigationPage.HasNavigationBar="False"
              Title=" ">
-    <VerticalStackLayout>
-        <Label 
+    <StackLayout
+         >
+        <StackLayout  VerticalOptions="CenterAndExpand" >
+            <Label            
             Text="auth to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Button
-            Text="next"
+        <Entry
+            Placeholder="email@my.com"
+             WidthRequest="220"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            />
+        <Entry
+            Placeholder="password"
+            WidthRequest="220"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            IsPassword="True"
+            />
+
+        </StackLayout>
+        <StackLayout
+             Padding="20"
+            >
+            <Button
+                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+              BackgroundColor="{AppThemeBinding Light= Purple, Dark={StaticResource Secondary}}"
+            Text="Login"
             Clicked="Button_Clicked"
             />
 
-    </VerticalStackLayout>
+        </StackLayout>
+
+    </StackLayout>
 </ContentPage>
