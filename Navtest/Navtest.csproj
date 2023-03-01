@@ -57,8 +57,10 @@
 
 	<ItemGroup>
 	  <None Remove="Views\" />
+	  <None Remove="Views\Log\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
+	  <Folder Include="Views\Log\" />
 	</ItemGroup>
 </Project>

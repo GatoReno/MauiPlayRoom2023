@@ -9,9 +9,10 @@ public partial class NewPage1 : ContentPage
         
     }
 
-   async void Button_Clicked(System.Object sender, System.EventArgs e)
+     void Button_Clicked(System.Object sender, System.EventArgs e)
     {
-        await Shell.Current.GoToAsync($"///{nameof(MainPage)}");
+        //await Shell.Current.GoToAsync($"///{nameof(MainPage)}");
+        App.Current.MainPage = new AppShell();
 
     }
 }
