@@ -33,6 +33,9 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -53,14 +56,21 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="4.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Views\" />
 	  <None Remove="Views\Log\" />
+	  <None Remove="Resources\.DS_Store" />
+	  <None Remove="Renders\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="Views\Log\" />
+	  <Folder Include="Renders\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\.DS_Store" />
 	</ItemGroup>
 </Project>

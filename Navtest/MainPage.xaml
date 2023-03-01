@@ -13,6 +13,10 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+            <Button
+                Text="Pop"
+                Clicked="Button_Clicked_3"
+                />
            <Button
                 Text="auth"
                 Clicked="Button_Clicked"

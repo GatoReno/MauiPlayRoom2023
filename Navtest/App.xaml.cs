@@ -15,7 +15,7 @@ public partial class App : Application
     protected  async  override void OnStart()
     {
         base.OnStart();
-        var log = false;
+        var log = true;
         if (log)
         {
             MainPage = new AppShell();

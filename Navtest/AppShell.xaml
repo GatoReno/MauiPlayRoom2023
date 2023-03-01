@@ -6,10 +6,13 @@
     xmlns:views="clr-namespace:Navtest.Views"
     xmlns:local="clr-namespace:Navtest"
     Title=" "
-    Shell.FlyoutBehavior="Flyout">
+     Shell.FlyoutBehavior="Flyout"
+     BackgroundColor="Purple"
+     
+     >
 
 
-    <ShellContent
+    <ShellContent       
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />

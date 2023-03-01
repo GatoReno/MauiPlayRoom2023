@@ -1,4 +1,8 @@
-﻿namespace Navtest;
+﻿using Navtest.Renders;
+using CommunityToolkit;
+using CommunityToolkit.Maui.Views;
+
+namespace Navtest;
 
 public partial class MainPage : ContentPage
 {
@@ -24,6 +28,11 @@ public partial class MainPage : ContentPage
     {
         App.Current.MainPage = new NavigationPage(new Views.AuthPage());
     }
+
+    void Button_Clicked_3(System.Object sender, System.EventArgs e)
+    {
+        this.ShowPopup(new CustomePopUp());   
+     }
 }
 
 
