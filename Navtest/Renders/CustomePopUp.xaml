@@ -8,18 +8,22 @@
     <StackLayout
         Padding="30"
         VerticalOptions="FillAndExpand"
-        BackgroundColor="White"
+         BackgroundColor="{AppThemeBinding Light= Purple, Dark={StaticResource Secondary}}"
+             
         >
 
          
 
          <ActivityIndicator 
             VerticalOptions="Center"
-            Color="DarkGreen"
+             Color="{AppThemeBinding Light={StaticResource White}, Dark= Purple}"
+             
              HorizontalOptions="CenterAndExpand"
             IsRunning="True"
             />
-        <Label 
+        <Label
+               TextColor="{AppThemeBinding Light= White, Dark= Purple}"
+             
             HorizontalOptions="CenterAndExpand"
             Text="This a XCT Popup"
              />

@@ -7,7 +7,11 @@
      
         
 
-    <ScrollView>
+    <RefreshView>
+        <Grid
+            VerticalOptions="FillAndExpand"
+            >
+            <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
@@ -45,6 +49,10 @@
                 />
         </VerticalStackLayout>
     </ScrollView>
+
+        </Grid>
+
+    </RefreshView>
 
 </ContentPage>
 
