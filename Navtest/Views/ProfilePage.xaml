@@ -4,16 +4,17 @@
              x:Class="Navtest.Views.ProfilePage"
              Title="ProfilePage">
     <VerticalStackLayout>
-         <Label
+        <Label
             FontSize="Title"
             Text="Profile Collection here!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-         <Button
+        <Button
             VerticalOptions="EndAndExpand"
             Text="Auth"
-            
+                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+              BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
             Clicked="Button_Clicked"
             />
     </VerticalStackLayout>

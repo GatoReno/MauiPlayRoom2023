@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Navtest.Views.AuthPage"
+             NavigationPage.HasNavigationBar="False"
              Title=" ">
     <StackLayout
          >
@@ -28,8 +29,10 @@
         <StackLayout
              Padding="20"
             >
-            <Button            
-            Text="login"
+            <Button
+                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+              BackgroundColor="{AppThemeBinding Light= Purple, Dark={StaticResource Secondary}}"
+            Text="Login"
             Clicked="Button_Clicked"
             />
 

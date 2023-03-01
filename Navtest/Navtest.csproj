@@ -64,11 +64,13 @@
 	  <None Remove="Views\Log\" />
 	  <None Remove="Resources\.DS_Store" />
 	  <None Remove="Renders\" />
+	  <None Remove="Views\Themes\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="Views\Log\" />
 	  <Folder Include="Renders\" />
+	  <Folder Include="Views\Themes\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\.DS_Store" />

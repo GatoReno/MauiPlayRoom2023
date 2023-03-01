@@ -14,20 +14,32 @@
             VerticalOptions="Center">
 
             <Button
+                
+                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+              BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
                 Text="Pop"
                 Clicked="Button_Clicked_3"
                 />
            <Button
+                
+                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+              BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
                 Text="auth"
                 Clicked="Button_Clicked"
                 />
 
             <Button
+                
+                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+              BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
                 Text="load"
                 Clicked="Button_Clicked_1"
                 />
             <Button
-                BackgroundColor="Red"
+                
+                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+              BackgroundColor="Red"
+              
                 Text="log out"
                 Clicked="Button_Clicked_2"
                 />
