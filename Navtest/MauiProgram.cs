@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Navtest.Views;
 using Navtest.Views.Log;
-using Navtest.Views.Themes;
+using Navtest.Views.Themes; 
 
 namespace Navtest;
 
@@ -13,8 +13,9 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseMauiCommunityToolkit()
-			.ConfigureFonts(fonts =>
+             .UseMauiCommunityToolkit()
+              
+            .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
