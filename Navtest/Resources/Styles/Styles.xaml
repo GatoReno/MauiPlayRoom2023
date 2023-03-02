@@ -11,7 +11,7 @@
                 <VisualState x:Name="Normal">
                     <VisualState.Setters>
                         <Setter Property="BackgroundColor" Value="Transparent" />
-                        <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="Purple" />
+                        <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{AppThemeBinding Light=Purple, Dark={StaticResource Secondary}} " />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="Selected">

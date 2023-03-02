@@ -11,5 +11,14 @@ public partial class ThemePage : ContentPage
     {
 
 		bool toggled = (bool)e.Value;
+		if (toggled)
+		{
+			Application.Current.UserAppTheme = AppTheme.Dark;
+		}
+		else
+		{
+            Application.Current.UserAppTheme = AppTheme.Light;
+
+        }
     }
 }
