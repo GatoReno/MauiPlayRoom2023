@@ -12,7 +12,7 @@ public partial class App : Application
 
     }
 
-    protected  async  override void OnStart()
+    protected     override void OnStart()
     {
         base.OnStart();
         var log = true;

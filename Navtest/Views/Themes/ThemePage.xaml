@@ -5,9 +5,10 @@
              Title="ThemePage">
     <StackLayout
         HorizontalOptions="EndAndExpand"
+        Padding="20"
         >
         <Label
-            TextColor="Purple"
+             TextColor="{AppThemeBinding Light=Purple,Dark={StaticResource Secondary}}"
             Text="Activar Dark theme"
             FontSize="Micro"
             />
