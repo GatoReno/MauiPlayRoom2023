@@ -28,7 +28,7 @@
 <!--
 Custom Style you can apply to any Flyout Item
 -->
-<Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+<!--<Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
     <Setter Property="VisualStateManager.VisualStateGroups">
         <VisualStateGroupList>
             <VisualStateGroup x:Name="CommonStates">
@@ -47,7 +47,7 @@ Custom Style you can apply to any Flyout Item
             </VisualStateGroup>
         </VisualStateGroupList>
     </Setter>
-</Style>
+</Style>-->
 
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Secondary}}" />

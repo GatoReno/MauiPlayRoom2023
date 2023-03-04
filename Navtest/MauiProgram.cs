@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using Navtest.ViewModels;
 using Navtest.Views;
 using Navtest.Views.Log;
 using Navtest.Views.Themes; 
@@ -35,6 +36,8 @@ public static class MauiProgram
         builder.Services.AddTransient<LoginPage>();
 		builder.Services.AddSingleton<ThemePage>();
         builder.Services.AddTransient<SettingsPage>();
+        builder.Services.AddTransient<PickerPage>();
+        builder.Services.AddTransient<PickerPageViewModel>();
 
         return builder.Build();
 

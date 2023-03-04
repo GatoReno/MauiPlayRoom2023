@@ -13,7 +13,7 @@
         <Button
             VerticalOptions="EndAndExpand"
             Text="Auth"
-                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
+                TextColor="{AppThemeBinding Light= Purple, Dark={StaticResource White}}"
               BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
             Clicked="Button_Clicked"
             />

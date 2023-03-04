@@ -9,14 +9,23 @@
     Title=" "
      Shell.FlyoutBehavior="Flyout"
      BackgroundColor="Purple"
-     
      >
+    <FlyoutItem
+        Title="Home"
+                   >
+        <ShellContent       
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+
 
 
     <ShellContent       
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
 
     <ShellContent
                 Title="Profiel"
@@ -30,6 +39,27 @@
         Title="Theme"
         ContentTemplate="{DataTemplate theme:ThemePage}"
       />
-    
+
+    <MenuItem Text="Docs"  Clicked="MenuItem_Clicked_1" ></MenuItem>
+
+    <FlyoutItem
+        IsVisible="{Binding DocsVisibility}"
+          Title="Logout" Icon="icon_feed.png">
+        <ShellContent           
+        ContentTemplate="{DataTemplate views:AuthPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+     <FlyoutItem
+        IsVisible="{Binding DocsVisibility}"
+          Title="Logout" Icon="icon_feed.png">
+        <ShellContent           
+        ContentTemplate="{DataTemplate views:AuthPage}"
+        Route="MainPage" />
+    </FlyoutItem>
+
+    <MenuItem Text="Logout"  Clicked="MenuItem_Clicked" ></MenuItem>
+        <MenuItem Text="Pop on Shell"  Clicked="MenuItem_Clicked_2" ></MenuItem>
+
+
 </Shell>
 

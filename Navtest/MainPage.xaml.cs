@@ -33,6 +33,12 @@ public partial class MainPage : ContentPage
     {
         this.ShowPopup(new CustomePopUp());   
      }
+
+    async void Button_Clicked_4(System.Object sender, System.EventArgs e)
+    {
+
+        await Shell.Current.GoToAsync($"/{nameof(Views.PickerPage)}");
+    }
 }
 
 
