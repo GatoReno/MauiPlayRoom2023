@@ -6,6 +6,7 @@
              Title="MapPage">
     <Grid>
         <mpas:Map
+            x:Name="mymap"
             IsZoomEnabled="True"
             IsShowingUser="True"
             >

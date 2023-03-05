@@ -6,4 +6,13 @@ public partial class MapPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        if (mymap != null)
+        {
+            mymap = null;
+        }
+    }
 }
