@@ -7,6 +7,8 @@
     xmlns:webViews="clr-namespace:Navtest.Views.WebView"
     xmlns:theme="clr-namespace:Navtest.Views.Themes"
     xmlns:camera="clr-namespace:Navtest.Views.Cammera"
+    xmlns:map="clr-namespace:Navtest.Views.Maps"
+
     xmlns:local="clr-namespace:Navtest"
     Title=" "
      Shell.FlyoutBehavior="Flyout"
@@ -14,7 +16,7 @@
      
      >
 
-
+    
     <ShellContent       
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -27,6 +29,9 @@
     <ShellContent
                 Title="Settings"
                 ContentTemplate="{DataTemplate views:SettingsPage}" />
+    <ShellContent
+                Title="Map Page"
+                ContentTemplate="{DataTemplate map:MapPage}" />
 
     <ShellContent       
         Title="Theme"

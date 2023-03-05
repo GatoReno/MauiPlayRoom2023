@@ -60,6 +60,8 @@
 		<PackageReference Include="SkiaSharp.Skottie" Version="2.88.3" />
 		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.3" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+		<PackageReference Include="Microsoft.Maui.Maps" Version="7.0.59" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="7.0.59" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -74,7 +76,9 @@
  
 	  <None Remove="Messages\" />
  
-	  <None Remove="Views\WebView\" />
+ 	  <None Remove="Views\WebView\" />
+ 	  <None Remove="Views\Maps\" />
+ 
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -86,9 +90,9 @@
 	  <Folder Include="ViewModels\" />
  
 	  <Folder Include="Messages\" />
- 
-	  <Folder Include="Views\WebView\" />
-	</ItemGroup>
+ 	  <Folder Include="Views\WebView\" />
+ 	  <Folder Include="Views\Maps\" />
+ 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\.DS_Store" />
 	</ItemGroup>
