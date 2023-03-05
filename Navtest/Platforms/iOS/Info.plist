@@ -30,5 +30,7 @@
 	<string>Assets.xcassets/appicon.appiconset</string>
 	<key>NSCameraUsageDescription</key>
 	<string>navtest need to access camera permissions </string>
+	<key>NSLocationUsageDescription</key>
+	<string>navtest need location permission</string>
 </dict>
 </plist>

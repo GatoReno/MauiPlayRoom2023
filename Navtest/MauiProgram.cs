@@ -4,6 +4,7 @@ using Navtest.ViewModels;
 using Navtest.Views;
 using Navtest.Views.Cammera;
 using Navtest.Views.Log;
+using Navtest.Views.Maps;
 using Navtest.Views.Themes; 
 
 namespace Navtest;
@@ -16,7 +17,7 @@ public static class MauiProgram
 		builder
 			.UseMauiApp<App>()
              .UseMauiCommunityToolkit()
-              
+              .UseMauiMaps()
             .ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -26,7 +27,9 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
- 
+        builder.Services.AddSingleton<MapPage>();
+
+
         builder.Services.AddSingleton<IMediaPicker>(MediaPicker.Default);
         builder.Services.AddSingleton<CameraPage>();
         builder.Services.AddSingleton<CameraPageViewModel>();
