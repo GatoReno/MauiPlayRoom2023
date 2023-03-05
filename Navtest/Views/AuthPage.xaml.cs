@@ -26,7 +26,7 @@ public partial class AuthPage : ContentPage
         }
         else
         {
-            Preferences.Clear("Id_User");
+            Preferences.Clear();
         }
     }
 }
