@@ -5,10 +5,10 @@ using Microsoft.Maui.Storage;
 
 namespace Navtest.ViewModels
 {
-	public class CameraPageViewModel : BindableObject
-	{
-		IMediaPicker _MediaPicker;
-		private string _imagePath;
+    public class CameraPageViewModel : BindableObject
+    {
+        IMediaPicker _MediaPicker;
+        private string _imagePath;
         private Image _DisplayPhoto;
 
         public Image DisplayPhoto
@@ -22,22 +22,27 @@ namespace Navtest.ViewModels
             }
         }
         public string ImageSourceFromCamera
-		{
-			get => _imagePath;
+        {
+            get => _imagePath;
 
             set
-			{
-				_imagePath = value;
-				OnPropertyChanged();
+            {
+                _imagePath = value;
+                OnPropertyChanged();
             }
-		}
+        }
 
         public ICommand TakePhotoCommnad { get; private set; }
         public CameraPageViewModel(IMediaPicker mediaPicker)
-		{
-			_MediaPicker = mediaPicker;
-			TakePhotoCommnad = new Command(OnTakePhotoCommnad);
+        {
+            _MediaPicker = mediaPicker;
+            TakePhotoCommnad = new Command(OnTakePhotoCommnad);
             DisplayPhoto = new Image();
+        }
+
+        ~CameraPageViewModel()
+        {
+            DisplayPhoto = null;
         }
 
         private async void OnTakePhotoCommnad(object obj)
@@ -62,8 +67,8 @@ namespace Navtest.ViewModels
                     return stream;
                 });
 
-                
 
+                
             }
         }
     }
