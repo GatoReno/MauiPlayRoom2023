@@ -6,6 +6,7 @@
              x:Class="Navtest.Renders.CustomePopUp"
                >
     <StackLayout
+        x:Name="MainStack"
         Padding="30"
         VerticalOptions="FillAndExpand"
          BackgroundColor="{AppThemeBinding Light= Purple, Dark={StaticResource Secondary}}"
