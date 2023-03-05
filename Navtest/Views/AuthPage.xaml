@@ -35,7 +35,16 @@
             Text="Login"
             Clicked="Button_Clicked"
             />
-
+            <Label
+                Text="Automatic Log in"
+                FontSize="Micro"
+                />
+             <Switch
+            Margin="0,0,10,0"
+             HorizontalOptions="EndAndExpand"
+            IsToggled="False"
+             Toggled="Switch_Toggled"
+            />
         </StackLayout>
 
     </StackLayout>

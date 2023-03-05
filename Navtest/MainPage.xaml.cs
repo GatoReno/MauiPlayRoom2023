@@ -26,7 +26,8 @@ public partial class MainPage : ContentPage
 
     void Button_Clicked_2(System.Object sender, System.EventArgs e)
     {
-        App.Current.MainPage = new NavigationPage(new Views.AuthPage());
+         Preferences.Clear();
+            App.Current.MainPage = new NavigationPage(new Views.AuthPage());
     }
 
     void Button_Clicked_3(System.Object sender, System.EventArgs e)
