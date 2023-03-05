@@ -24,23 +24,23 @@
 
             <Button
                 
-                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
-              BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
+                TextColor="{AppThemeBinding Light= White, Dark=Purple}"
+              BackgroundColor="{AppThemeBinding Light=Purple, Dark={StaticResource Secondary}}"
                 Text="Pop"
                 Clicked="Button_Clicked_3"
                 />
            <Button
                 
-                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
-              BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
+                TextColor="{AppThemeBinding Light= White, Dark=Purple}"
+              BackgroundColor="{AppThemeBinding Light=Purple, Dark={StaticResource Secondary}}"
                 Text="auth"
                 Clicked="Button_Clicked"
                 />
 
             <Button
                 
-                TextColor="{AppThemeBinding Light= White, Dark={StaticResource White}}"
-              BackgroundColor="{AppThemeBinding Light={StaticResource Purple}, Dark={StaticResource Secondary}}"
+                TextColor="{AppThemeBinding Light= White, Dark=Purple}"
+              BackgroundColor="{AppThemeBinding Light=Purple, Dark={StaticResource Secondary}}"
                 Text="load"
                 Clicked="Button_Clicked_1"
                 />

@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using Navtest.ViewModels;
 using Navtest.Views;
+using Navtest.Views.Cammera;
 using Navtest.Views.Log;
 using Navtest.Views.Themes; 
 
@@ -24,17 +26,19 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-
-        
-            builder.Services.AddSingleton<LoadingPage>();
-        builder.Services.AddSingleton<LoadingPageViewModel>();
+ 
+        builder.Services.AddSingleton<IMediaPicker>(MediaPicker.Default);
+        builder.Services.AddSingleton<CameraPage>();
+        builder.Services.AddSingleton<CameraPageViewModel>();
+        builder.Services.AddSingleton<LoadingPage>();
+        builder.Services.AddSingleton<LoadingPageViewModel>(); 
         builder.Services.AddSingleton<AuthPage>();
         builder.Services.AddTransient<PaymentsPage>();
         builder.Services.AddSingleton<ProfilePage>();
         builder.Services.AddTransient<NewPage1>();
         builder.Services.AddTransient<NewPage2>();
         builder.Services.AddTransient<LoginPage>();
-		builder.Services.AddSingleton<ThemePage>();
+		    builder.Services.AddSingleton<ThemePage>();
         builder.Services.AddTransient<SettingsPage>();
 
         return builder.Build();
