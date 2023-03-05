@@ -74,6 +74,7 @@
  
 	  <None Remove="Messages\" />
  
+	  <None Remove="Views\WebView\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -86,6 +87,7 @@
  
 	  <Folder Include="Messages\" />
  
+	  <Folder Include="Views\WebView\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\.DS_Store" />

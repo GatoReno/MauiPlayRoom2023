@@ -4,7 +4,8 @@ using Navtest.ViewModels;
 using Navtest.Views;
 using Navtest.Views.Cammera;
 using Navtest.Views.Log;
-using Navtest.Views.Themes; 
+using Navtest.Views.Themes;
+using Navtest.Views.WebView;
 
 namespace Navtest;
 
@@ -26,7 +27,10 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
- 
+
+        builder.Services.AddSingleton<WebViewPage>();
+
+
         builder.Services.AddSingleton<IMediaPicker>(MediaPicker.Default);
         builder.Services.AddSingleton<CameraPage>();
         builder.Services.AddSingleton<CameraPageViewModel>();
