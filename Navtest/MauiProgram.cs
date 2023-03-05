@@ -25,8 +25,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		
-
+        
+            builder.Services.AddSingleton<LoadingPage>();
+        builder.Services.AddSingleton<LoadingPageViewModel>();
         builder.Services.AddSingleton<AuthPage>();
         builder.Services.AddTransient<PaymentsPage>();
         builder.Services.AddSingleton<ProfilePage>();
