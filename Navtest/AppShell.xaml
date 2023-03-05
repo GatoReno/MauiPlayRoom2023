@@ -35,30 +35,37 @@
                 Title="Settings"
                 ContentTemplate="{DataTemplate views:SettingsPage}" />
 
-    <ShellContent       
-        Title="Theme"
-        ContentTemplate="{DataTemplate theme:ThemePage}"
-      />
+     <!--<FlyoutItem>
+               <Tab Title="Press me" />
 
+    <Tab Title="Press me 2" />
+
+    </FlyoutItem>-->
     <MenuItem Text="Docs"  Clicked="MenuItem_Clicked_1" ></MenuItem>
-
+    
     <FlyoutItem
+        
         IsVisible="{Binding DocsVisibility}"
           Title="Logout" Icon="icon_feed.png">
         <ShellContent           
         ContentTemplate="{DataTemplate views:AuthPage}"
-        Route="MainPage" />
+       />
     </FlyoutItem>
      <FlyoutItem
+        
         IsVisible="{Binding DocsVisibility}"
           Title="Logout" Icon="icon_feed.png">
         <ShellContent           
         ContentTemplate="{DataTemplate views:AuthPage}"
-        Route="MainPage" />
+         />
     </FlyoutItem>
 
-    <MenuItem Text="Logout"  Clicked="MenuItem_Clicked" ></MenuItem>
-        <MenuItem Text="Pop on Shell"  Clicked="MenuItem_Clicked_2" ></MenuItem>
+    <MenuItem
+
+        Text="Logout"  Clicked="MenuItem_Clicked" ></MenuItem>
+        <MenuItem
+
+        Text="Pop on Shell"  Clicked="MenuItem_Clicked_2" ></MenuItem>
 
 
 </Shell>

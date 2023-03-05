@@ -22,6 +22,13 @@ public partial class AppShell : Shell, INotifyPropertyChanged
     public AppShell()
     {
         InitializeComponent();
+        MenuItem menuItemLogout = new MenuItem()
+        {
+            Text = "test 1",
+            StyleClass = new[] { "menuitemstyle" }
+        };
+        menuItemLogout.Clicked += MenuItem_Clicked_1;
+        Items.Add(menuItemLogout);
         DocsVisibility = false;
         BindingContext = this;
         Routing.RegisterRoute(nameof(AuthPage), typeof(AuthPage));
@@ -45,6 +52,8 @@ public partial class AppShell : Shell, INotifyPropertyChanged
     void MenuItem_Clicked_1(System.Object sender, System.EventArgs e)
     {
         DocsVisibility = !DocsVisibility;
+        var ex = (MenuItem)sender;
+        
     }
 
     void MenuItem_Clicked_2(System.Object sender, System.EventArgs e)

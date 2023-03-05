@@ -18,11 +18,17 @@
             >
             <ScrollView>
 
-                <StackLayout>
-                    <Image Source="giphy.gif"
-                           HeightRequest="200" 
-                           HorizontalOptions="Center" 
-                           IsAnimationPlaying="True" />
+                <StackLayout
+
+                    >
+                    <Image
+                       Source="giphy.gif"
+       HeightRequest="200" 
+       HorizontalOptions="Center" 
+       IsAnimationPlaying="True"
+                      >
+
+                    </Image>
                     <VerticalStackLayout
                         Spacing="25"
                         Padding="30,0"

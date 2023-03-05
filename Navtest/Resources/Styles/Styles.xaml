@@ -23,9 +23,30 @@
             </VisualStateGroup>
         </VisualStateGroupList>
     </Setter>
-</Style>
-
+</Style >
+    <Style Class="menuitemstyle" TargetType="Layout"  ApplyToDerivedTypes="True" >
+            <Setter Property="VisualStateManager.VisualStateGroups">
+        <VisualStateGroupList>
+            <VisualStateGroup x:Name="CommonStates">
+                <VisualState Name="Normal">
+                    <VisualState.Setters>
+                        <Setter Property="BackgroundColor" Value="Transparent" />
+                        <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{AppThemeBinding Light=Purple, Dark={StaticResource Secondary}} " />
+                    </VisualState.Setters>
+                </VisualState>
+                 
+                     <VisualState Name="Selected">
+                    <VisualState.Setters>
+                        <Setter Property="BackgroundColor" Value="Purple" />
+                        <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="White" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateGroupList>
+    </Setter>
+    </Style>
 <!--
+    TargetType="Layout"
 Custom Style you can apply to any Flyout Item
 -->
 <!--<Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
