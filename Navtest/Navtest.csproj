@@ -67,12 +67,16 @@
 	  <None Remove="Resources\.DS_Store" />
 	  <None Remove="Renders\" />
 	  <None Remove="Views\Themes\" />
+	  <None Remove="Views\Cammera\" />
+	  <None Remove="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="Views\Log\" />
 	  <Folder Include="Renders\" />
 	  <Folder Include="Views\Themes\" />
+	  <Folder Include="Views\Cammera\" />
+	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\.DS_Store" />
