@@ -4,6 +4,15 @@
              x:Class="Navtest.Views.Cammera.CameraPage"
              Title="CameraPage">
     <VerticalStackLayout>
+        <Image
+
+            Aspect="AspectFit"
+            HeightRequest="340"
+            Rotation="90"
+            Source="{Binding DisplayPhoto.Source}"
+            Margin="20,20,20,20" 
+            
+            />
         <Button
             Text="Open Camera"
             Command="{Binding TakePhotoCommnad}"
