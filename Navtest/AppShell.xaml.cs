@@ -3,6 +3,7 @@ using Navtest.Views.Cammera;
 
 using Navtest.Views.Log;
 using Navtest.Views.Maps;
+using Navtest.Views.Testing;
 using Navtest.Views.Themes;
 using Navtest.Views.WebView;
 
@@ -25,6 +26,8 @@ public partial class AppShell : Shell
        
         Routing.RegisterRoute(nameof(ThemePage), typeof(ThemePage));
         Routing.RegisterRoute(nameof(CameraPage), typeof(CameraPage));
+
+        Routing.RegisterRoute(nameof(TestingPage), typeof(TestingPage));
 
     }
 }

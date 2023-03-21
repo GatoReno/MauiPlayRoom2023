@@ -8,14 +8,17 @@
     xmlns:theme="clr-namespace:Navtest.Views.Themes"
     xmlns:camera="clr-namespace:Navtest.Views.Cammera"
     xmlns:map="clr-namespace:Navtest.Views.Maps"
-
+    xmlns:test="clr-namespace:Navtest.Views.Testing"
     xmlns:local="clr-namespace:Navtest"
     Title=" "
      Shell.FlyoutBehavior="Flyout"
      BackgroundColor="Purple"
      
      >
-
+    <ShellContent       
+        Title="test"
+        ContentTemplate="{DataTemplate test:TestingPage}"
+      />
     
     <ShellContent       
         Title="Home"

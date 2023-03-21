@@ -9,8 +9,8 @@
         
 
     <RefreshView>
- 
-
+            
+        
 
 
         <Grid
@@ -21,7 +21,10 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-
+                    <Image
+                        Source="dotnet_bot"
+                        HeightRequest="120"
+                        />
             <Button
                 
                 TextColor="{AppThemeBinding Light= White, Dark=Purple}"

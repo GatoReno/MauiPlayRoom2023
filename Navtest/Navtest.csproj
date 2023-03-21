@@ -79,6 +79,9 @@
  	  <None Remove="Views\WebView\" />
  	  <None Remove="Views\Maps\" />
  
+ 	  <None Remove="Services\" />
+ 	  <None Remove="Renders\PopupRender\" />
+ 	  <None Remove="Views\Testing\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -92,6 +95,9 @@
 	  <Folder Include="Messages\" />
  	  <Folder Include="Views\WebView\" />
  	  <Folder Include="Views\Maps\" />
+ 	  <Folder Include="Services\" />
+ 	  <Folder Include="Renders\PopupRender\" />
+ 	  <Folder Include="Views\Testing\" />
  	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\.DS_Store" />

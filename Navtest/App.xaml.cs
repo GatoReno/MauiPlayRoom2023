@@ -1,5 +1,6 @@
 ﻿ using Navtest.Views;
 using Navtest.Views.Log;
+using Navtest.Views.Testing;
 
 namespace Navtest;
 
@@ -17,7 +18,7 @@ public partial class App : Application
     {
         base.OnStart();
         var log = true;
-        MainPage = new LoadingPage(new LoadingPageViewModel());
+       // MainPage = new AppShell();
         //if (log)
         //{
         //    MainPage = new AppShell();

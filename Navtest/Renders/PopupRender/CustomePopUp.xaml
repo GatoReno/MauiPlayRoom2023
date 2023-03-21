@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+             x:Class="Navtest.Renders.CustomePopUp" 
+               >
+    <StackLayout
+        x:Name="MainStack"
+        Padding="20"
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="Fill"
+         BackgroundColor="{AppThemeBinding Light= Purple, Dark={StaticResource Secondary}}"
+             
+        >
+
+        <ActivityIndicator 
+            VerticalOptions="Center"
+             Color="{AppThemeBinding Light={StaticResource White}, Dark= Purple}"
+             x:Name="Indicator" 
+            IsRunning="True"
+            />
+        <Label
+               TextColor="{AppThemeBinding Light= White, Dark= Purple}"
+             x:Name="PopUpTitle"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Title"
+            Text="{Binding Title}"
+              />
+        <Label
+             TextColor="{AppThemeBinding Light= White, Dark= Purple}"
+             x:Name="PopUpMessage"
+             FontSize="Subtitle"
+             HorizontalOptions="FillAndExpand"
+             Text="{Binding Message}"
+              />
+
+        <HorizontalStackLayout
+            Margin="0,20,0,0"
+            VerticalOptions="EndAndExpand"
+            x:Name="ButtonsArea"
+            HorizontalOptions="FillAndExpand"
+            >
+
+
+        </HorizontalStackLayout>
+
+    </StackLayout>
+</xct:Popup>
